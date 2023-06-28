@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 This example demonstrates passing functions as arguments. Here, a
-function is deinfed in JavaScript which expects a function as an
+function is defined in JavaScript which expects a function as an
 argument. Then that JavaScript function is executed from Python and
 the Python `print` function  is passed as an argument.
 """
