@@ -21,8 +21,8 @@
   - Loading a Python module from JavaScript
 - `require-npm-package-from-py/`
   - Using an NPM package directly from Python
-- `require-npm-packages`
+- `require-npm-packages/`
   - Calling JavaScript code that uses NPM modules
-- `load-wasm-from-py`
+- `load-wasm-from-py/`
   - Loading a WebAssembly module in Python and calling WASM function
 
