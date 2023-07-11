@@ -39,3 +39,5 @@ pip install pythonmonkey
 - `promises/`
   - Using JavaScript promises in Python
 
+## Fullstack Example using CyrptoJS
+For a more in depth example using the CryptoJS NPM package, refer to [https://github.com/Distributive-Network/PythonMonkey-Crypto-JS-Fullstack-Example](https://github.com/Distributive-Network/PythonMonkey-Crypto-JS-Fullstack-Example/).
