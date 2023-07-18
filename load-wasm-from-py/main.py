@@ -8,21 +8,19 @@ as a JavaScript promise.
 import asyncio
 import pythonmonkey as pm
 
+# get the global WebAssembly object
+WebAssembly = pm.eval('WebAssembly')
+
 async def async_fn():
-  # open the factorial.wasm binary file
+  # read the factorial.wasm binary file
   file = open('factorial.wasm', 'rb')
   wasm_bytes = bytearray(file.read())
 
-  # evaluate the JavaScript code and return the factorial function as
-  # a JavaScript promise
-  wasm_fact_function_promise = pm.eval('''
-  async (code) => {
-    const wasmFac = await WebAssembly.instantiate(code, {});
-    return wasmFac.instance.exports.fac;
-  }
-  ''')
+  # instantiate the WebAssemby code
+  wasm_fact = await WebAssembly.instantiate(wasm_bytes, {})
 
-  return await wasm_fact_function_promise(wasm_bytes)
+  # return the "fac" factorial function fromn the wasm module
+  return wasm_fact.instance.exports.fac;
 
 # await the promise which returns the factorial WebAssembly function
 factorial = asyncio.run(async_fn())
