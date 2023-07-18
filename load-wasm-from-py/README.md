@@ -1,6 +1,6 @@
 # Load WebAssembly from Python
 
-This example demonstrates running WebAssembly code from Python using
+This example demonstrates running [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) code from Python using
 PythonMonkey.
 
 There are two files used in this example: `factorial.wasm` and

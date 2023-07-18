@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
 This example uses the JavaScript WebAssembly API to compile and
-instantiate the `factorial.wasm` file and return the "fac" function
-as a JavaScript promise.
+instantiate the `factorial.wasm` file and return the "fac" function.
 """
 
 import asyncio
