@@ -15,10 +15,10 @@ async def async_fn():
   file = open('factorial.wasm', 'rb')
   wasm_bytes = bytearray(file.read())
 
-  # instantiate the WebAssemby code
+  # instantiate the WebAssembly code
   wasm_fact = await WebAssembly.instantiate(wasm_bytes, {})
 
-  # return the "fac" factorial function fromn the wasm module
+  # return the "fac" factorial function from the wasm module
   return wasm_fact.instance.exports.fac;
 
 # await the promise which returns the factorial WebAssembly function
