@@ -7,6 +7,5 @@
 import sys, os
 import pythonmonkey as pm
 
-require = pm.createRequire(__file__)
-require('./my-javascript-module');
+pm.require('./my-javascript-module');
 

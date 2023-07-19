@@ -7,9 +7,8 @@ install it.
 """
 
 import pythonmonkey as pm
-require = pm.createRequire(__file__)
 
-isOdd = require("is-odd")
+isOdd = pm.require("is-odd")
 
 print(isOdd(7)) # This will output False
 print(isOdd(2048)) # This will output True

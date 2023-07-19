@@ -10,8 +10,7 @@ import pythonmonkey as pm
 import asyncio
 import time
 
-require = pm.createRequire(__file__)
-async_await_example = require("./async-await-example")
+async_await_example = pm.require("./async-await-example")
 
 async def main():
   # create a JavaScript promise which resolves after 1 second (1000 milliseconds)
